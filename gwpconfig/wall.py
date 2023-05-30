@@ -4,10 +4,11 @@ import math
 import numpy as np
 
 # Wall size given in meters - (x, y).
-WALL_SIZE = [1.25, 1.3]
+WALL_SIZE = [4.1, 3.1]
 # Pin raster - distances between pins in (x, y).
 WALL_RASTER = [0.2, 0.25]
 PIN_HEIGHT = 0.0
+
 
 def create_grid(three_dim):
     """Calculate pins positions. Pins are placed in squared pattern.
@@ -33,4 +34,3 @@ def create_grid(three_dim):
                 pins.append([x, y, PIN_HEIGHT])
 
     return np.array(pins)
-
